@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+ <div class="background">
+ 	<div class="nav" >
+ 		<a class="a active" href="#">HOME</a>
+ 		<a class="b" href="#">ABOUT ME</a>
+ 		<a class="c" href="#">OTHERS</a>
+ 		<a class="d" href="#">CONTACT</a>
+ 		
+ </div>
+	
+<div class="content">
+	<div class="home">
+		<h1>I'm Lakshmi Priya</h1>
+		<h3>Electronics and Communication Engineer<h3>
+	</div>
+</div>
+	<div class="aboutus">
+		<p><b>Hey Everyone!!!</b><br><br> I'm obsessed with Learning.I learn a lot in books,social medias and from many other online courses.In that way I've learnt HTML,CSS and some basics of python.So now I've designed my own webpage this is the begining of it and I wish to learn a lot in this.</p>
+		
+		<p> Am 20 years old.I am pursuing Bachelor of Engineering (B.E.,) in Electronics and Communication.I've completed my schooling in velammal.I don't believe in luck.Coz that does'nt happened to me.But I strongly believe in hardwork.If you work hard you'll definitely get paid for that not immediatedly but definitely. </p>
+		
+		<p>I see every negative things in a positive way. I'm an upcoming web developer learning deep about web designing and programing.I always engage myself with some activities. I learn practice and work for it.</p>
+		<p>I like electronics so I chose this. I used to dream about inventing a new things in electronics and I'm working for it.Soon I'll accomplish my dream. </p>
+		
+		
+	</div>
+	
+		<div class="others">
+			 <h2><b>RESUME:</b></h2><br>
+                         <a class="mail" href="https://lp1923.github.io/priya-resume/">https://lp1923.github.io/priya-resume/</a><br><br>
+			<h2 ><b>PROJECTS:</b></h2><br>
+			      <h2 ><b>LPG LEAKAGE DETECTOR:</b></h2>
+			            <p>This project is about every individual's safety.Here my device detects the leakage in LPG and alerts the individual with an playback voice and it also turns on the exhaust fan.</p><br>
+			        <h2 ><b>SMART VEHICLE:</b></h2>
+			             <p>The vehicle is smart which verifies the documentation of the vehicle and has many other sensors which completely concentrates on road safety. </p><br>
+			             <h2>SKILLS:</h2><br>
+			             <p>Web Designing</p>
+			             <p>self learning</p>
+			              <p>Problem solving</p>
+                         <p>Team player</p>
+
+                          <p>Adaptablity</p>
+                       
+
+
+		</div>
+
+	<div class="contact">
+		<div class="contactform">
+				<form action="index.html" method="post">
+					<input type="text" name="" class="inputtext" placeholder="First Name">
+					<input type="text" name="" class="inputtext" placeholder="Last Name">
+					<input type="text" name="" class="inputtext" placeholder="E-mail ID">
+					<textarea cols="4" rows="6" class="inputmessage" placeholder="Comments"></textarea>
+					<input type="button" name="" class="submitbutton" value="Submit">
+
+				</form>
+				
+		</div>
+	</div>
+	<div class="loading">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+
+    
+
+
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+$(".background").hide();
+$(window).load(function(){
+	
+    $(".background").fadeIn();
+    $(".loading").hide();
+   });
+	$(document).ready(function(){
+		$('a').click(function(){
+			//alert("i am click");
+			var selected=$(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+		});
+
+		var $a = $('.a'),
+		$b = $('.b'),
+		$c = $('.c'),
+		$d = $('.d'),
+		$home = $('.home'),
+		$aboutus = $('.aboutus'),
+		$others = $('.others'),
+		$contact = $('.contact');
+
+		$a.click(function(){
+			$home.fadeIn();
+			$aboutus.fadeOut();
+			$others.fadeOut();
+			$contact.fadeOut();
+        });
+        $b.click(function(){
+			$aboutus.fadeIn();
+			$home.fadeOut();
+			$others.fadeOut();
+			$contact.fadeOut();
+        });
+
+		$c.click(function(){
+			$others.fadeIn();
+			$home.fadeOut();
+			$aboutus.fadeOut();
+			$contact.fadeOut();
+        });
+
+		$d.click(function(){
+			$contact.fadeIn();
+			$home.fadeOut();
+			$others.fadeOut();
+			$aboutus.fadeOut();
+			
+			
+        });
+	});
+	
+</script>
+</body>
+</html>
